@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,44,9,1) 35%, rgba(106,0,255,1) 100%);
+  text-align: center;
+  font-size: 30px;
+  font-family:Tahoma;
+  color:rgba(245, 245, 245, 0.8);
+  ul{
+    padding:0;
+    li{
+      list-style-type: none;
+      padding:10px;
+    }
+  }
+
+
+}
