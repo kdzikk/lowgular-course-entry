@@ -8,19 +8,21 @@ import {EmployeesFacesComponentModule} from "./ui/employees-faces/employees-face
 import {EmployeeServiceModule} from "./services/employee.service-module";
 import {ProjectComponentModule} from "./ui/project/project.component-module";
 import {ProjectServiceModule} from "./services/project.service-module";
+import {EmployeeFormComponentModule} from "./ui/employee-form/employee-form.component-module";
 
 @NgModule({
   declarations: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        HttpClientModule,
-        EmployeeListComponentModule,
-        EmployeesFacesComponentModule,
-      EmployeeServiceModule,
-      ProjectComponentModule,
-      ProjectServiceModule,
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    EmployeeListComponentModule,
+    EmployeesFacesComponentModule,
+    EmployeeServiceModule,
+    ProjectComponentModule,
+    ProjectServiceModule,
+    EmployeeFormComponentModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
