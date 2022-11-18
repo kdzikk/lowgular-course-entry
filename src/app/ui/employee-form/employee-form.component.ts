@@ -12,8 +12,8 @@ import {EmployeeService} from "../../services/employee.service";
 export class EmployeeFormComponent {
   readonly employeeForm: FormGroup = new FormGroup({
     name: new FormControl(null, [Validators.required]),
+    lastname: new FormControl(null, [Validators.required]),
     age: new FormControl(null, [Validators.min(0), Validators.required]),
-    salary: new FormControl(null, [Validators.min(0), Validators.required]),
   });
 
   // onEmployeeFormSubmitted(employeeForm: FormGroup): void {
@@ -23,6 +23,6 @@ export class EmployeeFormComponent {
   }
 
   onFormSubmitted(form: CreateEmployeeModel){
-    this._employeeService.create(form).subscribe();
+    this._employeeService.create({name: form.name, lastname: form.lastname, age: form.age}).subscribe()
   }
 }
